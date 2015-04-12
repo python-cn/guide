@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html ng-app="guide">
+    <head>
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+	    <link href="static/style.css" rel="stylesheet" type="text/css">
+        <link href="static/github.css" rel="stylesheet" type="text/css">
+        <script src="bower_components/concat.min.js"></script>
+	    <title>Python-cn Guide</title>
+
+        <script type="text/ng-template" id="/template/home.html">
+            <div ng-controller="homeCtrl" class="ng-cloak">
+                <div markdowntext>
+## firefly招募开发者
+
+
+「欢迎入伙！」
+
+我们想做一个中国python用户的社区. 这里只有2种人: pythonista和其它.
+
+愿景:
+
+* 社区不是一个人的或者几个人写的, 而是很多人贡献代码产生的.
+* 有豆瓣上有的的一些社交功能.
+* 给pythonista提供一个学习, 交流, 找工作等方面的一个平台
+* 能像ruby-china一样说: `这里就是 Python 社区，目前这里已经是国内最权威的 Python 社区，拥有国内所有资深的 Python 工程师`
+* 这个社区能开源一些有用的库/代码.
+
+链接:
+
+-   GitHub: https://github.com/python-cn/firefly
+-   Email: ciici123@gmail.com
+
+情怀:
+
+-   [一个程序员的情怀](/#/post/pythonista.md)
+                </div>
+            </div>
+        </script>
+    </head>
+
+
+    <script type="text/ng-template" id="/template/post.html">
+        <div ng-controller="postCtrl" class="ng-cloak">
+            <h1>{{post.title}}</h1>
+            <div markdown ng-model="post.text">
+            </div>
+        </div>
+    </script>
+
+<body>
+	<div id="layout" class="content pure-g" ng-controller="listCtrl">
+        <div id="nav" class="pure-u">
+            <div class="nav-inner">
+                <button class="primary-button pure-button">Firefly导航</button>
+                <div class="pure-menu">
+                    <ul class="pure-menu-list ng-cloak">
+		                <li class="pure-menu-item scale-fade" ng-repeat="post in blogList">
+                            <a ng-href="/#/post/{{post.url}}" class="pure-menu-link">{{post.title}}</a
+                        </li>
+                        <li class="pure-menu-heading">链接</li>
+                        <li class="pure-menu-item">
+                            <a href="https://github.com/python-cn" class="pure-menu-link">
+                                <span class="pythoncn-label"></span>Pythoncn
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://github.com/python-cn/firefly" class="pure-menu-link">
+                                <span class="firefly-label"></span>Firefly
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="https://pythoncn.slack.com/" class="pure-menu-link">
+                                <span class="slack-label"></span>Pythoncn-slack
+                            </a>
+                        </li>
+	                </ul>
+	            </div>
+            </div>
+        </div>
+
+        <div id="main" class="pure-u-1">
+		    <div ng-view class="post-animate"></div>
+	    </div>
+	    </div>
+	    <script src="static/main.js"></script>
+	    <link rel="prefetch" href="posts/list.md" />
+
+</body>
+
+</html>
