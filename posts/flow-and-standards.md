@@ -120,7 +120,7 @@ PS: 大家注意不要强加你认为正确地方式给别人, 有些东西属�
 
 项目使用scss, 不能直接修改css. 这样的代码修改是不会被merge的
 
-#### javasccript
+#### javascript
 
 请参照 [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
 
