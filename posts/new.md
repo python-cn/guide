@@ -29,7 +29,7 @@ $pip install -r dev-requirements.txt # 安装开发依赖
 $pre-commit install -t pre-push # 假如你希望对flake8做本地检查可以安装这个git-hook. 以后每次你的push都会跑一遍对当前提交代码中的检查
 ```
 
-PS: pre-commit请放心使用, 代码是写的.
+PS: pre-commit请放心使用, 代码是我写的.
 
 #### 前端开发
 
@@ -42,13 +42,14 @@ PS: pre-commit请放心使用, 代码是写的.
 
 环境配置
 
-1. 首先需要安装node(我们会使用npm), 可以到官网https://nodejs.org/下载安装
+1. 首先需要安装node(我们会使用npm), 可以到官网 https://nodejs.org/ 下载安装
+2. 其次需要安装ruby(我们会使用gem), 可以到官网 https://www.ruby-lang.org/ 下载安装
+3. 配置firefly的开发环境
 
-2. 配置firefly的开发环境
-
-    cd firefly/static
-    npm install
-    grunt # 如果你不喜欢占用一个终端, 可以使用tmux或者screen
+        cd firefly/static
+        sudo gem install sass
+        npm install
+        node_modules/grunt-cli/bin/grunt # 如果你不喜欢占用一个终端, 可以使用tmux或者screen
 
 #### 启动firefly
 
