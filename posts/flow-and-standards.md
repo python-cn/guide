@@ -76,6 +76,7 @@ $git push origin travis-pep # 提交你的代码到你自己的仓库(origin)
 2. commit massage不能有无聊的信息, 比如 `test`, `1`, `qwert` 这些. 请仔细写
 3. pr的描述请说的详细些, 比如介绍你本次修改要解决的问题, 最好有bug的前因后果等等. 方便别人review. 也方便一段时候后排错(你设想下, 假如是你维护一个pr写的很烂,commit很乱不知所云的人会怎么样)
 4. 一个pr请只关于解决一个问题. 不要一个pr带几百行甚至更多的代码(包含三方库代码的不计入其中), review会很痛苦
+5. 请不要把commit变多, 提交前可以rebase修改下提交的记录.
 
 PS: 假如你的代码没有过travis是不可能会被合并的. 你能在创建好的pr页面, 最后一个commit的右边看到这个小标示. 如果绿色, 恭喜你. 如果红色, 请赶快看看为什么, 谨防被人吐槽啦
 
@@ -128,7 +129,5 @@ PS: 大家注意不要强加你认为正确地方式给别人, 有些东西属�
 
 1. 符合pep8标准
 2. http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
-3. http://www.slideshare.net/hongqn/python-9915982?qid=e166e94d-5f2d-458e-8052-75c4375faa4d&v=qf1&b=&from_search=15
-4. 可以看看<python高级编程>这本书
 
 更多资源请关注: http://python-cn.github.io/guide/#/post/material.md

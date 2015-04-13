@@ -10,7 +10,7 @@ url: new.md
 title: 开发流程&代码规范
 url: flow-and-standards.md
 -------
-title: python学习资料
+title: python学习之路
 url: material.md
 -------
 title: 一个程序员的情怀(选读)
