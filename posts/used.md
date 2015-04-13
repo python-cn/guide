@@ -3,7 +3,7 @@ title: firefly用到的库/框架
 
 这篇主题就是介绍firefly用到的库/框架. 以及使用它们的原因.
 
-## python的
+### python的
 
 #### Flask
 
@@ -18,7 +18,7 @@ title: firefly用到的库/框架
 
 #### MongoDB
 
-选择Mongodb就是因为社区在早期可能功能特性有较大的更改, 用SQL对表结构要求太高. 而且mongodb的性能很好.
+firefly的数据库. 选择Mongodb就是因为社区在早期可能功能特性有较大的更改, 用SQL对表结构要求太高. 而且mongodb的性能很好.
 
 #### mongoengine
 
@@ -27,25 +27,30 @@ title: firefly用到的库/框架
 
 #### plim
 
-plim我个人觉得是一个被严重低估的基于mako的模板. 这里用它其实是示范原因. 给想用plim的人一个范例.
+firefly的模板, plim我个人觉得是一个被严重低估的基于mako的模板. 这里用它其实是示范原因. 给想用plim的人一个范例.
 
 #### pygments
 
 [pygments](https://bitbucket.org/birkenfeld/pygments-main)也是[pocoo](http://www.pocoo.org/)团队的作品, 提供各种语言的语法高亮, 他是基本所有python开源项目做语法高亮的底层库. 它有非常好的文档
 很容易自定义词法分析和格式. 他的源码也值得一读
 
+它是firefly里用来配合mistune根据markdown内容渲染成带语法的html.
+
 #### mistune
 
 [mistune](https://github.com/lepture/mistune)是[lepture](https://github.com/lepture)写的markdown解析工具. 支持国货
 
-## 前端的
+### 前端的
 
 #### grunt
-[grunt](https://github.com/gruntjs/grunt)是一个javascript的任务处理器, 社区用来做代码更改自动执行sass, 重载页面, 代码压缩等
+[grunt](https://github.com/gruntjs/grunt)是一个javascript的任务处理器(用了才知道).
+firefly用来做代码更改自动执行sass, 重载页面, 代码压缩等
 
 #### RequireJS
 
 [RequireJS](http://requirejs.org)是一个用于模块/文件加载的库, 主要是大型项目中管理代码加载的库, 具体的可以看[阮一峰的介绍](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
+
+firefly用他来管理js.
 
 #### CodeMirror
 
@@ -58,16 +63,24 @@ plim我个人觉得是一个被严重低估的基于mako的模板. 这里用它�
 它主要用于firefly实时预览markdown编辑的文章.
 
 
-以下是一些我推荐的可选的开发工具
+### 以下是一些我推荐的可选的开发工具
 
 #### IPython
 
-[IPython](https://github.com/ipython/ipython)是一个增强的python交互解释器. 它自带了非常多得magic命令,
-还有知名的notebook.
+[IPython](https://github.com/ipython/ipython)是一个增强的python交互解释器. 它的特点我之前说过:
+
+```
+ipython notebook - 一个可以跑的在线可编辑可运行的笔记. 可以测试程序, 执行代码, 当做说明文档, 能帮助不擅长web开发的同学做出很多页面的效果, 支持markdown语法等
+自动补全 - 当我import xx的时候 我可以像用zsh一样使用Tab自动补全对应的模块/方法的名字
+magic - 它提供很很多magic的函数命令, 比如你可以直接执行ls, pwd等. 还能使用其他shell命令, 调用编辑器等
+它能通过?或者??帮我查看代码的注释, 接口参数等等.
+它提供很多的配置选择, 可以使用内置/外部插件达到一些其他的功能, 比如autoreload - 你不需要退出ipython就能获得你已经import之后的代码修改后的效果.
+它在分布计算, 数据分析上又很好的支持, ipython非常大的使用群体是科学家和算法工程师
+```
 
 #### flake8
 
-[flake8](https://github.com/PyCQA/flake8)它是pyflakes+pep8, 对python做代码检查.
+[flake8](https://github.com/PyCQA/flake8)它是pyflakes+pep8, 对python做代码检查. firefly强制要求需要通过flake8检查
 
 #### autopep8
 
