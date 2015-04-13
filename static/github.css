@@ -397,18 +397,6 @@ sub {
     color: #999;
     background-color: #EAF2F5; }
 
-.type-csharp .highlight .k, .type-csharp .highlight .kt {
-    color: #00F; }
-.type-csharp .highlight .nf {
-    color: #000;
-    font-weight: normal; }
-.type-csharp .highlight .nc {
-    color: #2B91AF; }
-.type-csharp .highlight .nn {
-    color: #000; }
-.type-csharp .highlight .s, .type-csharp .highlight .sc {
-    color: #A31515; }
-
 body.dark #wrapper {
     background: transparent !important;
     box-shadow: none !important;
