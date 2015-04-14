@@ -315,12 +315,16 @@ a {
     color: rgb(75, 113, 151);
 }
 
-.pythoncn-label, .firefly-label, .slack-label {
+.pythoncn-label, .firefly-label, .slack-label, .tb-label {
     width: 15px;
     height: 15px;
     display: inline-block;
     margin-right: 0.5em;
     border-radius: 3px;
+}
+
+.tb-label {
+    background: #6699ff;
 }
 
 .pythoncn-label {
@@ -425,3 +429,7 @@ a {
     50% {
         -webkit-transform: scale(1);
         transform: scale(1); } }
+
+.ng-pristine {
+    min-height: 50px;
+}
