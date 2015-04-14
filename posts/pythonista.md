@@ -9,7 +9,7 @@ title: 一个程序员的情怀
 我是小明(对, 就是这个完全没有气场的昵称). 我来解释为什么想做这个社区.
 
 2013年5月. 我看到我的github的timeline出现[lepture](https://github.com/lepture)启动了[june](https://github.com/lepture/june)项目. 也就是现在的[python-china](http://python-china.org).
-哪个时候我还是一个运维. 写python一年多. 但是python只是我的部分工作语言. 那个时候我和95%的人一样, 不知道未来的路. 我不知道日后会到中国最好的用python的公司做产品开发.
+那个时候我还是一个运维. 写python一年多. 但是python只是我的部分工作语言. 那个时候我和95%的人一样, 不知道未来的路. 我不知道日后会到中国最好的用python的公司做产品开发.
 我不知道我能给一些知名开源项目贡献代码. 我也无法预见到现在的自己. 当时觉得社区离我好远. 我即没有能力去做一个开发者, 也没有能力解答别人python相关的问题.
 
 python-china现在还是很冷清, 远没有ruby-china和cnodejs这些社区的氛围. 我发现去招聘网站上看python的相关职位, 数量确实在涨, 说明它被越来越多的人接受.
