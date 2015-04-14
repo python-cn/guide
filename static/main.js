@@ -12,7 +12,14 @@
                 return scope.$watch((function() {
                     return ngModel.$modelValue;
                 }), function(newValue) {
-                    return element.html(marked((newValue ? newValue : "# loading...")));
+                    if (newValue) {
+                        return element.html(marked(newValue));
+                    } else {
+                        return element.html('<div class="sk-spinner sk-spinner-chasing-dots">' +
+                                            '<div class="sk-dot1"></div>' +
+                                            '<div class="sk-dot2"></div>' +
+                                            '</div>');
+                    }
                 });
             }
         };
