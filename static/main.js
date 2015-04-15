@@ -39,8 +39,6 @@
             templateUrl: "/template/home.html"
         }).when("/post/:name", {
             templateUrl: "/template/post.html"
-        }).when("/page/:name", {
-            templateUrl: "/template/post.html"
         }).otherwise({
             redirectTo: "/"
         });
@@ -70,7 +68,7 @@
 
     listCtrl = function($scope, $http) {
         window.w = $scope;
-        return $http.get("/guide/posts/list.md", {
+        return $http.get("/posts/list.md", {
             cache: true
         }).success(function(data) {
             return $scope.blogList = parseList(data)
@@ -106,7 +104,7 @@
 
     postCtrl = function($scope, $http, $routeParams) {
         $scope.name = $routeParams.name;
-        return $http.get('/guide/posts/' + $scope.name).success(function(data) {
+        return $http.get('/posts/' + $scope.name).success(function(data) {
             return $scope.post = parsePost(data);
         });
     };

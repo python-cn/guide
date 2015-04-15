@@ -20,7 +20,7 @@ title: python学习之路
 
 ### 可以写一些代码片段/小程序的pythonista
 
-1. <python高级编程> - 我严重推荐
+1. 《python高级编程》 - 我严重推荐
 2. http://www.slideshare.net/hongqn/python-9915982?qid=e166e94d-5f2d-458e-8052-75c4375faa4d&v=qf1&b=&from_search=15
 3. http://www.slideshare.net/vishnukraj/advanced-python-programming?qid=ecab429a-644c-4697-bc1c-be9e5f0ed0f5&v=qf1&b=&from_search=1
 3. http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
