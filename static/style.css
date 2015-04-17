@@ -433,3 +433,14 @@ a {
 .ng-pristine {
     min-height: 50px;
 }
+
+.warn {
+    background: none repeat scroll 0 0 rgb(37, 42, 58);
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.3em 1em;
+}
+
+.warn a {
+    color: #1b98f8;
+}
