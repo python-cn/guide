@@ -149,5 +149,7 @@ PS: 大家注意不要强加你认为正确地方式给别人, 有些东西属�
 
 1. 符合pep8标准
 2. http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+3. https://google-styleguide.googlecode.com/svn/trunk/pyguide.html
+4. http://www.pocoo.org/internal/styleguide/
 
 更多资源请关注: http://python-cn.github.io/guide/#/post/material.md
